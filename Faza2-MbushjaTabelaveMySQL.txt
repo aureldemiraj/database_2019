@@ -1,3 +1,65 @@
+insert into lidhjakomentpostim() values ('K001','P001','2019-04-02','Prishtine');
+insert into lidhjakomentpostim() values ('K002','P001','2019-04-02','Prishtine');
+insert into lidhjakomentpostim() values ('K003','P001','2019-04-03','Gjilan');
+insert into lidhjakomentpostim() values ('K004','P002','2019-05-05','Peje');
+insert into lidhjakomentpostim() values ('K005','P002','2019-11-26','Prishtine');
+insert into lidhjakomentpostim() values ('K006','P002','2019-05-05','Prizren');
+insert into lidhjakomentpostim() values ('K007','P003','2019-11-27','Rahovec');
+insert into lidhjakomentpostim() values ('K008','P004','2019-06-21','Rahovec');
+insert into lidhjakomentpostim() values ('K009','P004','2019-06-21','Prishtine');
+insert into lidhjakomentpostim() values ('K010','P004','2019-06-21','Prishtine');
+insert into lidhjakomentpostim() values ('K011','P004','2019-06-21','Prishtine');
+insert into lidhjakomentpostim() values ('K012','P004','2019-06-22','Prizren');
+insert into lidhjakomentpostim() values ('K013','P006','2019-08-07','Vushtrri');
+insert into lidhjakomentpostim() values ('K014','P009','2019-11-11','Peje');
+insert into lidhjakomentpostim() values ('K015','P010','2019-11-23','Prishtine');
+insert into lidhjakomentpostim() values ('K016','P010','2019-11-26','Prishtine');
+insert into lidhjakomentpostim() values ('K017','P010','2019-11-24','Prishtine');
+
+
+insert into Edukimi() values(2019001,'1','Naim Frasheri','Pergjithshem','Peje','2011-03-04');
+insert into Edukimi() values(2019001,'2','Kuvendi I Pejes','Gjimnazi Matematikor','Peje','2015-02-12');
+insert into Edukimi() values(2019001,'3','Universiteti I Prishtines','FSHMN','Prishtine','2019-12-12');
+insert into Edukimi() values(2019002,'1','Haki Stermilli','Pergjithshem','Prizren','2015-08-25');
+insert into Edukimi() values(2019002,'2','Gjon Buzuku','Shkenca Natyrore','Prizren','2018-03-03');
+insert into Edukimi() values(2019003,'1','Faik Konica','Pergjithshem','Prishtin','2015-12-16');
+insert into Edukimi() values(2019003,'2','Ali Sokoli','Mjekesi','Prishtin','2019-01-25');
+insert into Edukimi() values(2019003,'3','Universiteti I Prishtines','Mjekesi Pergjithshme','Prishtin','2018-06-28');
+insert into Edukimi() values(2019004,'1','Motrat Qiriazi','Pergjithshem','Vushtrri','2004-07-08');
+insert into Edukimi() values(2019004,'2','Kuvendi Arberit','Shkenca natyrore','Vushtrri','2008-10-28');
+insert into Edukimi() values(2019004,'3','Kolegji AAB','Shkenca Kompjuterike','Prishtine','2010-04-04');
+insert into Edukimi() values(2019004,'4','Rice University','Shkenca Kompjuterike','Houston','2016-12-12');
+insert into Edukimi() values(2017001,'1','Mustafa Bakiu','Pergjithshem','Gjilan','1984-02-12');
+insert into Edukimi() values(2017001,'2','Gjin Gazulli','Shkenca Shoqerore','Gjilan','1988-01-01');
+insert into Edukimi() values(2017001,'3','Universiteti I Prishtine','Gjuhe Amtare','Prishtine','1993-01-08');
+insert into Edukimi() values(2017002,'1','Emin Duraku','Pergjithshem','Rahovec','2005-12-14');
+insert into Edukimi() values(2017002,'2','Ali Hadri','Shkenca Natyrore','Rahovec','2010-09-10');
+insert into Edukimi() values(2017002,'3','Cornell University','Ingjinieri Kompjuterike','New York','2015-09-10');
+insert into Edukimi() values(2017002,'4','Universiteti I Prishtine','Ingjinieri Kompjuterike','Prishtine','2019-05-07');
+insert into Edukimi() values(2019005,'1','Lidhja e Prizrenit','Pergjithshem','Ferizaj','2008-08-08');
+insert into Edukimi() values(2019005,'2','Is Boletini','Shkenca shoqerore','Ferizaj','2012-10-10');
+insert into Edukimi() values(2019005,'3','Kolegji Heimer','Mjekesi Pergjithshme','Prishtine','2016-04-08');
+insert into Edukimi() values(2015001,'1','Mitrush Kurteli','Pergjithshem','Prishtine','2007-03-07');
+insert into Edukimi() values(2015001,'2','Sami Frasheri','Shkenca Natyrore','Prishtine','2010-12-12');
+insert into Edukimi() values(2015001,'3','Universiteti I Prishtines','Telekomunikacion','Prishtine','2016-12-16');
+insert into Edukimi() values(2019006,'1','Loyola Gymnasium',Null,'Prizren','2016-02-02');
+insert into Edukimi() values(2019006,'2','Loyola Gymnasium',Null,'Prizren','2019-05-19');
+insert into Edukimi() values(2014001,'1','Petro Marko','Pergjithshem','Gjilan','1993-07-29');
+insert into Edukimi() values(2014001,'2','Hasan Prishtina','Pergjithshem','Gjilan','1996-12-16');
+insert into Edukimi() values(2014001,'3','Universiteti I Prishtines','Gjuhe Angleze','Prishtin','2004-09-02');
+
+
+insert into Punaemehershme() values(2019001,9001,'Call Center Enigma','Agjent i shitjes','2017-01-02','2017-12-21','Prishtine');
+insert into Punaemehershme() values(2019004,9002,'Gazeta Eksspres','Web-Dizajn','2010-03-01','2011-11-30','Prishtine');
+insert into Punaemehershme() values(2019004,9003,'Levizja Vetvendosje','Pergjigjes I financave','2010-04-01','2012-01-09','Prishtine');
+insert into Punaemehershme() values(2017001,9004,'Bibloteka Gjilanit','Drejtoreshe','2005-12-12','2015-10-22','Gjilan');
+insert into Punaemehershme() values(2017001,9005,'Mustafa Bakiu','Drejtoreshe','2010-03-17','2005-04-14','Gjilan');
+insert into Punaemehershme() values(2017002,9006,'KosLift','Programer','2016-10-10','2018-02-06','Prishtine');
+insert into Punaemehershme() values(2015001,9007,'Common-aim','Ligjerues','2016-09-09','2019-10-28','Prishtine');
+insert into Punaemehershme() values(2014001,9008,'Londo-eye','Mesimdhenese','2005-10-20','2008-08-09','Gjilan');
+insert into Punaemehershme() values(2014001,9009,'RTV-Gjilani','Redaktore','2005-01-01','2007-04-14','Gjilan');
+
+
 insert into pelqimetkoment() values (326,'K001','2019-04-02');
 insert into pelqimetkoment() values (327,'K001','2019-04-03');
 insert into pelqimetkoment() values (328,'K002','2019-05-05');
@@ -39,7 +101,6 @@ insert into kerkesashok() values(26,2014001,2017001,'3','2019-11-29',null);
 insert into kerkesashok() values(27,2019002,2014001,'2','2019-12-03','2019-12-04');
 
 
-
 insert into listashokeve() values (2019003,2019001);
 insert into listashokeve() values (2019003,2019004);
 insert into listashokeve() values (2019003,2017002);
@@ -77,6 +138,7 @@ insert into listashokeve() values (2014001,2019006);
 insert into listashokeve() values (2014001,2019003);
 insert into listashokeve() values (2014001,2017002);
 
+
 insert into fotopostimet() values(1001,'P001',112);
 insert into fotopostimet() values(1002,'P001',113);
 insert into fotopostimet() values(1003,'P001',114);
@@ -102,6 +164,7 @@ insert into fotopostimet() values(1022,'P006',133);
 insert into fotopostimet() values(1023,'P006',134);
 insert into fotopostimet() values(1024,'P009',135);
 insert into fotopostimet() values(1025,'P010',136);
+
 
 insert into listaanetareve() values('G001',2019006);
 insert into listaanetareve() values('G001',2019001);
@@ -169,6 +232,7 @@ insert into pjesemarresit()values ('E005',2017001,'2');
 insert into pjesemarresit()values ('E005',2019005,'2');
 insert into pjesemarresit()values ('E005',2019003,'1');
 
+
 insert into komentet() values( 'K001',2019003, 'Nuk besoj qe kjo eshte e vertet miku im', '2019-04-02');
 insert into komentet() values( 'K002',2019001, 'Lexoji edhe njeher dhe do te me kuptosh, respekte klb', '2019-04-02');
 insert into komentet() values( 'K003',2015001, 'Nuk po me hapet videoja', '2019-04-03');
@@ -187,6 +251,7 @@ insert into komentet() values( 'K015',2019006, 'Urime, suksese', '2019-11-23');
 insert into komentet() values( 'K016',2017002, 'Urime, ku mund ta blej librin', '2019-11-26');
 insert into komentet() values( 'K017',2014001, 'Faleminderit shume, ne te gjitha librarit e Kosoves', '2019-11-24');
 
+
 insert into postimet() values('P001',2019001,'2019-04-02','Ketu gjeni fakte mbi ate qe pame dje ne mbemje qe beri buje, videon shikojeni deri ne minute 05:25','Prishtine, Kosove.','1');
 insert into postimet() values('P002',2019002,'2019-05-05','Te gjithe komentoni nga nje kenge te cilen e pelqeni shume','Prishtine, Kosove.','2');
 insert into postimet() values('P003',2019003,'2019-05-20','Me shoqerine e shkolles fillore','Prishtine, Kosove.','2');
@@ -202,6 +267,7 @@ insert into postimet() values('P012',2014001,'2019-11-26','28 nentori pjesa dyt'
 insert into postimet() values('P013',2017002,'2019-11-26','Kosova ole','Rahovec, Kosove.','1');
 insert into postimet() values('P014',2017002,'2019-11-27','Rahoves vs Prishtina','Prishtine, Kosove.','1');
 insert into postimet() values('P015',2019002,'2019-11-22','18.12.2014 ---*>','Prishtine, Kosove.','3');
+
 
 insert into adresa() values(2019001, 'rr. Hasan Prishtina','Peje','Kosove','30000');
 insert into adresa() values(2019002, 'rr. Avni Rrustemi','Prizren','Kosove','20000');
@@ -225,7 +291,6 @@ insert into telefoni() values(2019005,'+38349111777',null);
 insert into telefoni() values(2015001,'+38349111888',null);
 insert into telefoni() values(2019006,'+38349111999',null);
 insert into telefoni() values(2014001,'+38349111000','+38338444444');
-
 
 
 insert into punesimiitanishem() values(2019001,'SHFMU Naim Frasheri','Mesimdhenes','2019-01-01','Peje');
@@ -279,6 +344,7 @@ insert into librat() values(13,2019004,'Xha Gorio','Honore de Balzak','Roman');
 insert into librat() values(14,2017002,'Hamleti','Uilliam Shekspir','Roman');
 insert into librat() values(2,2019004,'Prilli i thyer','Ismail Kadare','Novele');
 
+
 insert into adresa() values(2019001, 'rr. Hasan Prishtina','Peje','Kosove','30000');
 insert into adresa() values(2019002, 'rr. Avni Rrustemi','Prizren','Kosove','20000');
 insert into adresa() values(2019003, 'rr. Agim Ramadani','Prishtine','Kosove','10000');
@@ -301,7 +367,6 @@ insert into telefoni() values(2019005,'+38349111777',null);
 insert into telefoni() values(2015001,'+38349111888',null);
 insert into telefoni() values(2019006,'+38349111999',null);
 insert into telefoni() values(2014001,'+38349111000','+38338444444');
-
 
 
 insert into punesimiitanishem() values(2019001,'SHFMU Naim Frasheri','Mesimdhenes','2019-01-01','Peje');
@@ -393,6 +458,7 @@ insert into fotovideo() values(134,2017002,'00:37','2019-08-06','.mov','C:\Users
 insert into fotovideo() values(135,2019006,'04:35','2019-11-11','.mp4','C:\Users\acer\Desktop\messi');
 insert into fotovideo() values(136,2014001,'00:25','2019-11-23','.mp4','C:\Users\acer\Desktop\perurimilibrit');
 
+
 insert into grupet() values ('G001','Maniake t’Futbollit','2019-01-20',2019006);
 insert into grupet() values ('G002','Merakli t’Kerreve','2019-01-25',2019001);
 insert into grupet() values ('G003','Maniake t’Filmave','2019-01-27',2019004);
@@ -406,6 +472,7 @@ insert into NiveliEdukimit() values(2,'Shkolla e mesme');
 insert into NiveliEdukimit() values(3,'Universiteti');
 insert into NiveliEdukimit() values(4,'Masteri');
 insert into NiveliEdukimit() values(5,'Doktoratura');
+
 
 insert into Aftesiteprofesionale() values(1,2019001,'Shkathtesi ne Matematike');
 insert into Aftesiteprofesionale() values(2,2019002,'Film-Making');
@@ -422,6 +489,7 @@ insert into Aftesiteprofesionale() values(12,2019004,'Fjalim Publik');
 insert into Aftesiteprofesionale() values(13,2019004,'Storytelling');
 insert into Aftesiteprofesionale() values(14,2015001,'Mendim Kritik');
 insert into Aftesiteprofesionale() values(3,2015001,'Menagjues i kohes');
+
 
 insert into shperndarjet() values('SH001',2019004,2019001);
 insert into shperndarjet() values('SH002',2019003,2019001);
@@ -462,6 +530,7 @@ insert into muzika() values(12,2019004,'Najher','Yll Limani','Balade');
 insert into muzika() values(13,2019004,'E premte','Unikkatil & Jeton','Rap');
 insert into muzika() values(14,2015001,'Sorry','Justin Bieber',	'Pop');
 
+
 insert into login() values(2019001,'Nelshani','Elshani123','ne@gmail.com');
 insert into login() values(2019002,'Tringaazeka','Tringazzz','tringa@live.com');
 insert into login() values(2019003,'Arikras','qm2019@','arina@outlook.com');
@@ -472,6 +541,7 @@ insert into login() values(2019005,'edikollari93','ediedikollari','edik@hotmail.
 insert into login() values(2015001,'Drinnnn','Kosova123','drinn@yahoo.com');
 insert into login() values(2019006,'Besartbosi','messi10','besart@gmail.com');
 insert into login() values(2014001,'Donikapnishi',	'Bmylove','donika@gmail.com');
+
 
 insert into pelqimet() values (2019003,301,'1');
 insert into pelqimet() values (2017001,302,'1');
