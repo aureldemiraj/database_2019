@@ -40,3 +40,118 @@ emertimi varchar (25),
 primary key (rid),
 foreign key (shid)references shfrytezuesi(shid)
 );
+
+create table niveliedukimit(
+NEid integer,
+emertimi varchar(40),
+primary key (NEid)
+);
+
+create table edukimi(
+shid integer,
+NEid integer ,
+emri varchar(40),
+drejtimi varchar(40),
+lokacioni varchar(40),
+diplomimi date,
+primary key (shid,NEid,diplomimi),
+foreign key (shid)references shfrytezuesi(shid),
+foreign key (NEid)references niveliedukimit(NEid)
+);
+
+create table aftesiteprofesionale(
+aftesia_id integer,
+shid integer,
+aftesiaprofesionale varchar(50),
+primary key(aftesia_id,shid),
+foreign key (shid)references shfrytezuesi(shid)
+);
+
+create table hobi(
+hobi_id integer,
+shid integer,
+hobi varchar(40),
+primary key (hobi_id ,shid),
+foreign key (shid)references shfrytezuesi(shid)
+);
+
+create table librat(
+libri_id integer,
+shid integer,
+emrilibrit varchar(100),
+autori varchar(50),
+zhanri varchar(25),
+primary key (libri_id,shid),
+foreign key (shid)references shfrytezuesi(shid)
+);
+
+create table muzika(
+muzika_id integer,
+shid integer,
+emrimuzikes varchar(100),
+autori varchar(50),
+zhanri varchar(25),
+primary key (muzika_id,shid),
+foreign key (shid) references shfrytezuesi(shid)
+);
+
+create table adresa(
+shid integer,
+rruga varchar(50),
+qyteti varchar(30),
+shteti varchar(30),
+kodipostal varchar(15),
+primary key(shid),
+foreign key (shid) references shfrytezuesi(shid)
+);
+
+create table telefoni(
+shid integer,
+telmobil varchar(30),
+telfix varchar(30),
+primary key (shid),
+foreign key(shid)references shfrytezuesi(shid)
+);
+
+create table punesimiitanishem(
+shid integer,
+emri_kompanise varchar(50),
+pozita_punes varchar(50),
+data_fillimit date,
+lokacioni varchar(40),
+primary key(shid),
+foreign key (shid)references shfrytezuesi(shid)
+);
+
+create table punaemehershme(
+shid integer,
+kompania_id integer,
+emri_kompanise varchar(50),
+pozita_punes varchar(50),
+data_fillimit date,
+data_mbarimit date,
+lokacioni varchar(40),
+primary key(shid,kompania_id,data_fillimit,data_mbarimit),
+foreign key (shid) references shfrytezuesi(shid)
+);
+
+create table kerkesashok(
+kerkesa_id integer,
+shid1 integer,
+shid2 integer,
+statusi enum("PRANIM","REFUZIM","NE PRITJE"),
+kohaedergeses date,
+kohaepranimit date,
+primary key (kerkesa_id) ,
+foreign key(shid1) references shfrytezuesi (shid),
+foreign key(shid2) references shfrytezuesi (shid)
+);
+
+create table listashokeve(
+id1 integer,
+id2 integer,
+primary key (id1,id2),
+foreign key (id1)references shfrytezuesi(shid),
+foreign key (id2)references shfrytezuesi(shid)
+);
+
