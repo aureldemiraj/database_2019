@@ -107,3 +107,95 @@ insert into komentet() values('K014',2019005,  'I mire eshte por CR7 me I mire',
 insert into komentet() values( 'K015',2019006, 'Urime, suksese', '2019-11-23');
 insert into komentet() values( 'K016',2017002, 'Urime, ku mund ta blej librin', '2019-11-26');
 insert into komentet() values( 'K017',2014001, 'Faleminderit shume, ne te gjitha librarit e Kosoves', '2019-11-24');
+
+insert into postimet() values('P001',2019001,'2019-04-02','Ketu gjeni fakte mbi ate qe pame dje ne mbemje qe beri buje, videon shikojeni deri ne minute 05:25','Prishtine, Kosove.','1');
+insert into postimet() values('P002',2019002,'2019-05-05','Te gjithe komentoni nga nje kenge te cilen e pelqeni shume','Prishtine, Kosove.','2');
+insert into postimet() values('P003',2019003,'2019-05-20','Me shoqerine e shkolles fillore','Prishtine, Kosove.','2');
+insert into postimet() values('P004',2019004,'2019-06-21','Sot u diplomova ne shkenca kompjuterike ne universitetin Rice, te qytetit Houston','Houston, SHBA.','1');
+insert into postimet() values('P005',2017001,'2019-07-28','Krenaria Jone','Gjilan, Kosove.','2');
+insert into postimet() values('P006',2017002,'2019-08-06','Vizite ne vendlindje','Rahovec, Kosove.','2');
+insert into postimet() values('P007',2019005,'2019-09-06','null','Ferizaj, Kosove.','2');
+insert into postimet() values('P008',2015001,'2019-10-10','null','Prishtine, Kosove.','2');
+insert into postimet() values('P009',2019006,'2019-11-11','Leo Messi shijone magjin e mbretit','Prizren, Kosove.','1');
+insert into postimet() values('P010',2014001,'2019-11-23','Libri qe kam botuar, mund ta gjeni ne te gjitha librarit e Kosoves','Gjilan, Kosove.','1');
+insert into postimet() values('P011',2014001,'2019-11-26','28 nentori po afron, urime miqesi','Gjilan, Kosove.','1');
+insert into postimet() values('P012',2014001,'2019-11-26','28 nentori pjesa dyt','Gjilan, Kosove.','1');
+insert into postimet() values('P013',2017002,'2019-11-26','Kosova ole','Rahovec, Kosove.','1');
+insert into postimet() values('P014',2017002,'2019-11-27','Rahoves vs Prishtina','Prishtine, Kosove.','1');
+insert into postimet() values('P015',2019002,'2019-11-22','18.12.2014 ---*>','Prishtine, Kosove.','3');
+
+insert into adresa() values(2019001, 'rr. Hasan Prishtina','Peje','Kosove','30000');
+insert into adresa() values(2019002, 'rr. Avni Rrustemi','Prizren','Kosove','20000');
+insert into adresa() values(2019003, 'rr. Agim Ramadani','Prishtine','Kosove','10000');
+insert into adresa() values(2019004, 'rr. Zahir Pajaziti','Vushtri','Kosove','42000');
+insert into adresa() values(2017001, 'rr. Jusuf Gervalla','Gjilan','Kosove','60000');
+insert into adresa() values(2017002, 'rr. Adem Jashari','Rahovec','Kosove','21000');
+insert into adresa() values(2019005, 'rr. Naim Frasheri','Ferizaj','Kosove','70000');
+insert into adresa() values(2015001, 'rr. UÇK','Prishtine','Kosove','10000');
+insert into adresa() values(2019006, 'rr. Mbreti Bardhyl','Prizren','Kosove','20000');
+insert into adresa() values(2014001, 'rr. Sylejman Vokshi','Gjilan','Kosove','60000');
+
+
+insert into telefoni() values(2019001,'+38349111111',null);
+insert into telefoni() values(2019002,'+38349111222',null);
+insert into telefoni() values(2019003,'+38349111333',null);
+insert into telefoni() values(2019004,'+38349111444','+38338123123');
+insert into telefoni() values(2017001,'+38349111555','+38338114114');
+insert into telefoni() values(2017002,'+38349111666',null);
+insert into telefoni() values(2019005,'+38349111777',null);
+insert into telefoni() values(2015001,'+38349111888',null);
+insert into telefoni() values(2019006,'+38349111999',null);
+insert into telefoni() values(2014001,'+38349111000','+38338444444');
+
+
+
+insert into punesimiitanishem() values(2019001,'SHFMU Naim Frasheri','Mesimdhenes','2019-01-01','Peje');
+insert into punesimiitanishem() values(2019002,'Viva Fresh Store','Sektorist','2018-01-01','Prizren');
+insert into punesimiitanishem() values(2019004,'Universiteti i Prishtines','Asistent','2017-01-01','Prishtine');
+insert into punesimiitanishem() values(2017001,'Mustafa Bakiu','Mesimdhenese','1995-01-01','Gjilan');
+insert into punesimiitanishem() values(2017002,'Universiteti i Prishtines','Asistent','2019-01-01','Prishtine');
+insert into punesimiitanishem() values(2014001,'Karrota Dizajn','Web Development','2015-01-01','Prishtine');
+insert into punesimiitanishem() values(2019005,'Ordinanca Gjyshinca','Punetor Teknik','2017-01-01','Prishtine');
+insert into punesimiitanishem() values(2019003,'Kesco','Punetor i thjeshte','2016-01-01','Prishtine');
+insert into punesimiitanishem() values(2015001,'Zyra e perkthimeve','Perkthyese','2016-01-01','Gjilan');
+insert into punesimiitanishem() values(2019006,'Kuvendi Gjilanit','Deputete','2016-01-01','Gjilan');
+
+
+insert into hobi() values(1,2019001,'Basketboll');
+insert into hobi() values(2,2019002,'Filmi');
+insert into hobi() values(3,2019002,'Lexim');
+insert into hobi() values(4,2019004,'Futboll');
+insert into hobi() values(5,2017001,'MakeUp');
+insert into hobi() values(6,2017002,'Shah');
+insert into hobi() values(3,2019005,'Lexim');
+insert into hobi() values(4,2015001,'Futboll');
+insert into hobi() values(4,2019006,'Futboll');
+insert into hobi() values(3,2014001,'Lexim');
+insert into hobi() values(7,2014001,'Vallezim');
+insert into hobi() values(6,2019004,'Shah');
+insert into hobi() values(8,2019004,'Biliardo');
+insert into hobi() values(9,2015001,'Tenis');
+insert into hobi() values(10,2019001,'Çiklizem');
+insert into hobi() values(11,2019002,'Kendim');
+insert into hobi() values(12,2019002,'Serial');
+insert into hobi() values(13,2019004,'Fitnes');
+insert into hobi() values(14,2017001,'Parukeri');
+insert into hobi() values(15,2017002,'Atletike');
+insert into hobi() values(13,2019005,'Fitnes');
+
+
+insert into librat() values(1,2019001,'Sikurt T"isha Djale','Haki Stermilli','Tragjedi');
+insert into librat() values(2,2019002,'Prilli i thyer','Ismail Kadare','Novele');
+insert into librat() values(3,2019002,'Tri kenge zie per Kosoven','Ismail Kadare','Novele');
+insert into librat() values(4,2019004,'Shpella e Pirateve','Petro Marko','Roman');
+insert into librat() values(5,2017001,'Malesorja','Nazmi Rrahmani','Roman');
+insert into librat() values(6,2017002,'Lulet e veres','Naim Frasheri','Poezi');
+insert into librat() values(7,2019005,'Poema e mjerimit','Migjeni','Poeme');
+insert into librat() values(8,2015001,'Doktor Gjilpera','Faik Konica','Roman');
+insert into librat() values(9,2019006,'Beni ecen vete','Migjeni','Roman');
+insert into librat() values(10,2014001,'Tregime te moqme shqiptare','Mitush Kurteli','Tregime');
+insert into librat() values(11,2014001,'E peguara','Ismail Kadare','Roman');
+insert into librat() values(12,2019004,'Romeo dhe Xhulieta','Uilliam Shekspir','Roman');
+insert into librat() values(13,2019004,'Xha Gorio','Honore de Balzak','Roman');
+insert into librat() values(14,2017002,'Hamleti','Uilliam Shekspir','Roman');
+insert into librat() values(2,2019004,'Prilli i thyer','Ismail Kadare','Novele');
