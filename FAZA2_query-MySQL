@@ -1,0 +1,103 @@
+query1:
+  Listoni të gjithë shfrytëzuesit që janë nga qyteti i Prishtinës.
+  
+ select s.emri
+ from shfrytezuesi s, adresa a
+ where s.id = a.shid 
+	and a.qyeti='Prishtina'
+
+
+query2:
+  Cilët shfrytëzues (numrat unik, emrat dhe mbiemrat e tyre) dje dhe
+sot kanë postuar, komentuar dhe kanë bërë shpërndarje (share)?
+
+select s.shid, s.emri, s.mbiemri
+from shfrytezuesi s, postimet p
+where s.shid=p.shid and p.data_post = '2019-11-27'
+and s.shid in (select s.shid
+			   from shfrytezuesi s, postimet p 
+                where s.shid = p.shid and p.data_post = '2019-11-27')
+and s.shid in (select s.shid
+			   from shfrytezuesi s, komentet k
+			    where s.shid=k.shid and k.datak = '2019-11-26')                                                                    
+and s.shid in (select s.shid
+			   from shfrytezuesi s, komentet k
+			    where s.shid=k.shid and k.datak = '2019-11-27')                
+and s.shid in (select s.shid
+			   from shfrytezuesi s, shperndarjapostimit shp
+			    where s.shid=shp.shid and shp.datashp = '2019-11-26')                
+and s.shid in (select s.shid
+			   from shfrytezuesi s, shperndarjapostimit shp
+			    where s.shid=shp.shid and shp.datashp = '2019-11-27')
+
+
+query3:
+  Paraqitni të gjitha ngjarjet (events) që janë caktuar për nesër në
+qytetin e Prishtinës dhe për të cilat ngjarje ka shfrytëzues që kanë
+konfirmuar pjesëmarrjen.
+
+select distinct e.event_emri
+from eventet e,pjesemarresit p
+where e.event_id=p.event_id 
+	and e.lokacioni = 'Prishtine'
+	and e.dataefillimit = '2019-11-28'
+	and p.aksion_id=2
+
+
+query4:
+  Listoni shfrytëzuesit të cilët dje kanë postuar dy ose më shumë
+statuse ndërsa sot nuk kanë postuar asnjë status. 
+
+  select s.shid,count(s.shid) as nripostimeve
+ 	from shfrytezuesi s, postimet p
+ 	where s.shid=p.shid and p.data_post = '2019-11-26' 
+ 	and s.shid in(
+		      	select distinct s.shid
+			from shfrytezuesi s, postimet p
+			where s.shid=p.shid 
+                	and s.shid not in (
+					  select s.shid
+					  from shfrytezuesi s, postimet p
+					  where s.shid=p.shid and p.data_post = '2019-11-27'
+ )) 
+ group by s.shid
+ having (nripostimeve>1)
+ 
+
+query5:
+  Listoni top 5 shfrytëzuesit me numër maksimal të postimeve në dy
+muajt e fundit. Lista të paraqes të dhënat e shfrytëzuesit (numrin
+unik, emrin, mbiemrin, qytetin dhe email-in) duke përfshirë edhe
+numrin e postimeve.
+
+	select s.shid,s.emri,s.mbiemri,a.qyteti,l.email,count(s.shid) as nripostimeve
+	from shfrytezuesi s,postimet p,adresa a,login l
+	where s.shid=p.shid and s.shid = a.shid and s.shid=l.shid and and p.data_post>'2019-09-27' and p.data_post<'2019-11-27'
+	group by s.shid
+	order by count(p.shid) desc
+	limit 5
+
+
+query6:(nuk eshte e perfunduar)
+  Paraqitni top 10 postimet (statuset) që janë postuar nga shfrytëzuesit
+që kanë numër maksimal të shokëve dhe që këto postime kanë marr
+numër maksimal të pëlqimeve. Lista të përmbaj këto të dhëna:
+ emrin dhe mbiemrin e shfrytëzuesit që ka bërë postimin,
+ numrin e shokëve (friends) që ka shfrytëzuesi që ka bërë
+postimin,
+ datën/kohën e postimit,
+ përmbajtjen e postimit (tekstin),
+ vendin e postimit- lokacionin nëse ka
+ numrin e pëlqimeve që ka marr postimi.
+
+
+  select id1,count(l.id1) as nrishokeve
+  from listashokeve l
+  group by l.id1
+  order by nrishokeve desc;
+  
+  select  s.emri, s.mbiemri, p.permbajtja, p.data_post, p.lokacioni, count(pp.post_id) as nripelqimeve
+  from pelqimetpost pp,postimet p, shfrytezuesi s
+  where pp.post_id=p.post_id and p.shid = s.shid
+  group by pp.post_id
+  order by nripelqimeve desc
