@@ -26,6 +26,186 @@ primary key(smid),
 foreign key (shid) references shfrytezuesi (shid)
 );
 
+create table fotoprofil(
+fotop_id integer,
+shid integer,
+titulli varchar(40),
+datafp date,
+formati varchar(10),
+lokacioni varchar(100),
+primary key (fotop_id),
+foreign key(shid) references shfrytezuesi(shid),
+foreign key(fotop_id) references fotovideo(fotovideo_id)
+); 
+
+
+create table albumi(
+albumi_id varchar(20),
+shid integer,
+emri varchar(40),
+fotovideo_id integer,
+primary key(albumi_id,fotovideo_id),
+foreign key (shid)references shfrytezuesi(shid),
+foreign key (fotovideo_id)references fotovideo(fotovideo_id) 
+);
+
+
+
+CREATE TABLE komentet(
+ koment_id varchar(10),
+ shid integer,
+ komenti text,
+ datak date,
+ primary key(koment_id),
+ foreign key (shid) references shfrytezuesi(shid)
+ );
+
+ 
+  create table lidhjakomentpostim (
+ koment_id varchar(10),
+ post_id varchar(10),
+ datakp date,
+ lokacioni varchar(25),
+ primary key (koment_id,post_id),
+  foreign key (post_id)references postimet (post_id),
+  foreign key (koment_id) references komentet(koment_id)
+ );
+ 
+ 
+ create table pelqimet(
+ shid integer,
+ pelqimet_id integer,
+ reaction enum("LIKE","WOW","ANGRY","SAD","HAHA","LOVE"),
+ primary key (pelqimet_id),
+ foreign key(shid)references shfrytezuesi(shid)
+ );
+ 
+ create table pelqimetpost(
+ pelqimet_id integer,
+ post_id varchar(10),
+ datapp date,
+ primary key (pelqimet_id),
+ foreign key (post_id) references postimet(post_id),
+ foreign key (pelqimet_id) references pelqimet(pelqimet_id)
+ );
+ 
+  create table pelqimetkoment(
+ pelqimet_id integer,
+ koment_id varchar(10),
+ datapk date,
+ primary key (pelqimet_id),
+ foreign key (pelqimet_id) references pelqimet(pelqimet_id),
+ foreign key (koment_id) references komentet(koment_id)
+ );
+ 
+  create table pelqimetfoto(
+ pelqimet_id integer,
+ fotopost_id integer,
+ datapf date,
+ primary key (pelqimet_id),
+ foreign key (pelqimet_id) references pelqimet(pelqimet_id),
+ foreign key (fotopost_id) references fotopostimet(fotopost_id)
+ );
+ 
+create table shperndarjet(
+shperndarja_id varchar(10),
+id1 integer,
+id2 integer,
+primary key (shperndarja_id),
+foreign key (id1) references shfrytezuesi(shid),
+foreign key (id2) references shfrytezuesi(shid) 
+);
+
+create table shperndarjapostimit(
+shperndarja_id varchar(10),
+shid integer,
+post_id varchar(10),
+pershkrimi varchar(255),
+datashp date,
+primary key(shperndarja_id),
+foreign key (shid)references shfrytezuesi(shid),
+foreign key (post_id)references postimet(post_id)
+);
+
+ 
+ 
+ create table grupet(
+ grup_id varchar(10),
+ grup_emri varchar(50),
+ dataekrijimit date,
+ krijuesiigrupitid integer,
+ primary key (grup_id),
+ foreign key (krijuesiigrupitid) references shfrytezuesi(shid)
+ );
+ 
+ create table listaanetareve(
+ grup_id varchar(10),
+ shid integer,
+ primary key (grup_id,shid),
+ foreign key(grup_id)references grupet (grup_id),
+ foreign key(shid)references shfrytezuesi (shid)
+ );
+
+
+create table eventet (
+ event_id varchar(10),
+ eventi_emri varchar (100),
+ lokacioni varchar(40),
+ pershkrimi longtext,
+ dataefillimit date,
+ dataembarimit date,
+ primary key (event_id)
+ );
+ 
+ 
+
+create table pjesemarresit(
+ event_id varchar(10),
+ shid integer,
+ aksioni enum("Do te shkoj","i interesuar"),
+ primary key(event_id ,shid),
+ foreign key (shid) references shfrytezuesi(shid),
+  foreign key (event_id)references eventet (event_id)
+ );
+ 
+  create table mesazhet(
+mesazhi_id varchar(10),
+id1 integer,
+id2 integer,
+permbajtja longtext,
+datam date,
+lokacioni varchar (40),
+primary key (mesazhi_id),
+foreign key (id1)references shfrytezuesi(shid), 
+foreign key (id2)references shfrytezuesi(shid)
+);/*referimi i id1 dhe id2*/
+
+
+
+
+ create table saved(
+save_id varchar(10),
+shid integer,
+post_id varchar(10),
+primary key (save_id),
+foreign key(shid)references shfrytezuesi(shid),
+foreign key (post_id)references postimet(post_id)
+);
+
+create table lojerat(
+lojerat_id integer,
+emri_lojes varchar(50),
+primary key(lojerat_id)
+);
+
+create table lojeratshfrytezuesi(
+lojerat_id integer,
+shid integer,
+lastplayed date,
+primary key (lojerat_id,shid),
+foreign key (lojerat_id)references lojerat(lojerat_id),
+foreign key (shid) references shfrytezuesi(shid)
+);
 create table pershkrimi (
 shid integer ,
 pershkrimi varchar(255),
