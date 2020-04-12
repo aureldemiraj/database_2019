@@ -155,3 +155,34 @@ foreign key (id1)references shfrytezuesi(shid),
 foreign key (id2)references shfrytezuesi(shid)
 );
 
+create table postimet(
+post_id varchar(10),
+shid integer,
+data_post datetime,
+permbajtja varchar(255),
+lokacioni varchar(40),
+privatesia enum('Public','Friends','Only me'),
+primary key (post_id),
+foreign key (shid)references shfrytezuesi(shid)
+);
+
+create table fotovideo(
+fotovideo_id integer,
+shid integer,
+titulli varchar(255),
+datapost datetime,
+formati varchar(10),
+lokacioni varchar(100),
+primary key (fotovideo_id),
+foreign key (shid)references shfrytezuesi(shid)
+);
+
+create table fotopostimet(
+fotopost_id integer,
+post_id varchar(10),
+fotovideo_id integer,
+primary key (fotopost_id),
+foreign key(post_id)references postimet(post_id),
+foreign key(fotovideo_id)references fotovideo(fotovideo_id)
+);
+
