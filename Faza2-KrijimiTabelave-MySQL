@@ -1,0 +1,42 @@
+create table shfrytezuesi(
+shid integer,
+emri varchar(25),
+mbiemri varchar(25),
+gjinia enum('M','F','O'),
+datelindja date,
+gjuha varchar(25),
+kohaeregjistrimit date,
+primary key(shid)
+);
+
+create table login (
+shid integer,
+perdoruesi varchar (25),
+fjalekalimi varchar(25),
+email varchar(40),
+primary key(shid),
+foreign key (shid) references shfrytezuesi(shid)
+);
+
+create table statusimartesor(
+shid integer,
+smid integer,
+emertimi varchar(25),
+primary key(smid),
+foreign key (shid) references shfrytezuesi (shid)
+);
+
+create table pershkrimi (
+shid integer ,
+pershkrimi varchar(255),
+primary key (shid),
+foreign key (shid) references shfrytezuesi(shid)
+);
+
+create table religjioni(
+shid integer,
+rid integer,
+emertimi varchar (25),
+primary key (rid),
+foreign key (shid)references shfrytezuesi(shid)
+);
