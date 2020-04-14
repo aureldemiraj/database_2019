@@ -635,3 +635,99 @@ insert into pelqimetfoto () values (342,1007,'2019-06-21');
 insert into pelqimetfoto () values (343,1008,'2019-06-21');
 insert into pelqimetfoto () values (344,1009,'2019-11-11');
 insert into pelqimetfoto () values (345,1008,'2019-08-06');
+
+insert into fotoprofil() values(101,2019001,'MyProfilePic','2019-04-01','.jpg','C:\Users\acer\Desktop\foto\image1');
+insert into fotoprofil() values(102,2019002,'Fotoja ime','2019-05-03','.jpg','C:\Users\acer\Desktop\fotojaime');
+insert into fotoprofil() values(103,2019003,null,'2019-05-19','.png','C:\Users\acer\Desktop\saveimg');
+insert into fotoprofil() values(104,2019004,'Foto Profili','2019-06-20','.jpg','C:\Users\acer\Desktop\fotoprofili');
+insert into fotoprofil() values(105,2017001,'Ne studime','2019-07-25','.jpg','C:\Users\acer\Desktop\fotot\1');
+insert into fotoprofil() values(106,2017002,'Profil pic','2019-08-04','.jpg','C:\Users\acer\Desktop\img2015');
+insert into fotoprofil() values(107,2019005,null,'2019-09-05','.jpg','C:\Users\acer\Desktop\foto135');
+insert into fotoprofil() values(108,2015001,null,'2019-10-09','.jpg','C:\Users\acer\Desktop\livefoto');
+insert into fotoprofil() values(109,2019006,'Leo Messi','2019-11-11','.jpg','C:\Users\acer\Desktop\Im10');
+insert into fotoprofil() values(110,2014001,null,'2019-11-22','.png','C:\Users\acer\Desktop\fotoperprofil');
+insert into fotoprofil() values(111,2019001,'MyProfilePic','2019-11-22','.jpg','C:\Users\acer\Desktop\foto\image2');
+
+
+insert into albumi() values('1A2019001',2019001,'Fotot e mija',101);
+insert into albumi() values('1A2019002',2019002,'My photos',102);
+insert into albumi() values('1A2019003',2019003,'Foto te ndryshme',103);
+insert into albumi() values('1A2019004',2019004,'Pushimi 2018',104);
+insert into albumi() values('1A2017001',2017001,'Brezovice',105);
+insert into albumi() values('1A2017002',2017002,'Ditlindja shokut',106);
+insert into albumi() values('1A2019005',2019005,'Albumi',107);
+insert into albumi() values('1A2015001',2015001,'My Album',108);
+insert into albumi() values('1A2019006',2019006,'Meine Album',109);
+insert into albumi() values('1A2014001',2014001,'Family Trip',110);
+insert into albumi() values('2A2019001',2019001,'E verteta',111);
+insert into albumi() values('2A2019001',2019001,'E verteta',112);
+insert into albumi() values('2A2019001',2019001,'E verteta',113);
+insert into albumi() values('2A2019001',2019001,'E verteta',114);
+insert into albumi() values('2A2019001',2019001,'E verteta',115);
+insert into albumi() values('2A2019001',2019001,'E verteta',116);
+insert into albumi() values('2A2019003',2019003,'Ekskurzioni',117);
+insert into albumi() values('2A2019004',2019004,'Diplomimi',118);
+insert into albumi() values('2A2019004',2019004,'Diplomimi',119);
+insert into albumi() values('2A2019004',2019004,'Diplomimi',120);
+insert into albumi() values('2A2017002',2017002,'Propper Pizza',121);
+insert into albumi() values('1A2017002',2017002,'Ditlindja shokut',122);
+insert into albumi() values('1A2017001',2017001,'Ditlindja shokut',123);
+insert into albumi() values('2A2019005',2019005,'Golf 4 shitje',124);
+insert into albumi() values('2A2019005',2019005,'Golf 4 shitje',125);
+insert into albumi() values('2A2019005',2019005,'Golf 4 shitje',126);
+insert into albumi() values('2A2014001',2014001,'Viti 2018',127);
+insert into albumi() values('2A2014001',2014001,'Viti 2018',128);
+insert into albumi() values('2A2019001',2019001,'E verteta',129);
+insert into albumi() values('1A2017001',2017001,'Brezovice',130);
+insert into albumi() values('1A2017002',2017002,'Ditlindja shokut',131);
+insert into albumi() values('1A2017002',2017002,'Ditlindja shokut',132);
+insert into albumi() values('1A2017002',2017002,'Ditlindja shokut',133);
+insert into albumi() values('1A2017002',2017002,'Ditlindja shokut',134);
+insert into albumi() values('2A2019006',2019006,'SunyHill Festival',135);
+insert into albumi() values('2A2014001',2014001,'Viti 2018',136);
+
+
+
+insert into lojerat() values(801,'Top Eleven Football Manager');
+insert into lojerat() values(802,'Zynga Poker');
+insert into lojerat() values(803,'8 Ball Pool');
+insert into lojerat() values(804,'Farmville');
+insert into lojerat() values(805,'Angry Birds Friends');
+insert into lojerat() values(806,'Songpop');
+insert into lojerat() values(807,'Texas Holdem Poker');
+insert into lojerat() values(808,'Social Empires');
+insert into lojerat() values(809,'Tetris Battle');
+insert into lojerat() values(810,'Traffic Motorbike');
+
+insert into lojeratshfrytezuesi() values(801,2019001,'2019-11-25');
+insert into lojeratshfrytezuesi() values(801,2019006,'2019-11-27');
+insert into lojeratshfrytezuesi() values(802,2019004,'2019-10-20');
+insert into lojeratshfrytezuesi() values(802,2019005,'2019-08-07');
+insert into lojeratshfrytezuesi() values(803,2019003,'2019-11-25');
+insert into lojeratshfrytezuesi() values(803,2017001,'2019-09-19');
+insert into lojeratshfrytezuesi() values(804,2015001,'2019-08-15');
+insert into lojeratshfrytezuesi() values(805,2019006,'2019-06-06');
+insert into lojeratshfrytezuesi() values(807,2014001,'2019-11-23');
+insert into lojeratshfrytezuesi() values(807,2017002,'2019-11-12');
+insert into lojeratshfrytezuesi() values(809,2017001,'2019-05-23');
+insert into lojeratshfrytezuesi() values(810,2019006,'2019-03-09');
+insert into lojeratshfrytezuesi() values(810,2019005,'2019-08-26');
+
+
+
+insert into mesazhet() values('M001',2019003,2019001,'Qka ke qajo qe e kishe postu','2019-04-03','Prishtine');
+insert into mesazhet() values('M002',2019001,2019003,'Propagandat e atyre','2019-04-03','Peje');
+insert into mesazhet() values('M003',2019003,2019001,'Nuk eshte etike te ja u perplasesh fytyres ashtu','2019-04-03','Prishtine');
+insert into mesazhet() values('M004',2019001,2019003,'hahaha','2019-04-03','Peje');
+insert into mesazhet() values('M005',2019006,2019004,'Urime qe kishe diplomu','2019-06-22','Prizren');
+insert into mesazhet() values('M006',2019004,2019006,'Flm shume vllaqko','2019-06-22','Vushtrri');
+insert into mesazhet() values('M007',2019006,2019004,'Tash a ki naj plan tjeter a don me hi najku me punu','2019-06-22','Prizren');
+insert into mesazhet() values('M008',2019004,2019006,'Ta shohim ma von','2019-06-22','Vushtrri');
+insert into mesazhet() values('M009',2019001,2019004,'oo urime urime','2019-06-22','Peje');
+insert into mesazhet() values('M010',2019004,2019001,'haha flm flm','2019-06-22','Vushtrri');
+insert into mesazhet() values('M011',2019006,2019004,'haha bravo bravo hallall','2019-06-22','Prizren');
+insert into mesazhet() values('M012',2019001,2019004,'Qka po na qarros','2019-06-22','Peje');
+insert into mesazhet() values('M013',2019004,2019001,'Qka te doni, hehe','2019-06-23','Vushtrri');
+insert into mesazhet() values('M014',2017002,2014001,'Shume ke libri I mir te propozoj te na sjellesh edhe shume vepra tjera','2019-11-30','Rahovec');
+insert into mesazhet() values('M015',2014001,2017002,'Flm shume e bej per ju','2019-11-30','Gjilan');
+
